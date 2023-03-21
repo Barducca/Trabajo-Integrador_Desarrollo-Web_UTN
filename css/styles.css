@@ -7,7 +7,7 @@
 }
 
 body{
-    color: #3C3C3C;
+    color: #ffffff;
     font-family: 'raleway', sans-serif;
     width: 1100px;
     margin: auto;
@@ -35,19 +35,21 @@ header{
     height: 80px;
     font-weight: 600;
     margin-top: 12px;
-    background-color: rgba(22, 175, 180, 0.6);
+    background-color: rgba(22, 175, 180, 0.7);
     justify-content: space-between;
     align-items: center;
     border-radius: 5px;
 }
 
 
-header a img{
+.icon{
     height: 64px;
     width: 64px;
     margin-left: 12px;
     margin-right: 8px;
     vertical-align: middle;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
 }
 
 main{
@@ -66,7 +68,7 @@ nav{
 #servicios{
     color: white;
     background: rgb(22, 175, 180);
-    background: linear-gradient(180deg, rgba(22, 175, 180,0.6) 0%, rgba(34,34,34,0.6) 50%, rgba(0,0,0,0.6) 100%);
+    background: linear-gradient(180deg, rgba(22, 175, 180,0.7) 0%, rgba(34,34,34,0.7) 50%, rgba(0,0,0,0.6) 100%);
     margin-top: 12px;
     width: 1100px;
     height: 500px;
@@ -94,17 +96,25 @@ nav{
 
 #form-box{
     width: 1100px;
-    height: 400px;
+    height: 600px;
     margin-top: 12px;
-    background-image: url(../img/hero-banner.jpg);
+    background-image: url(../img/form-background.png);
     background-size: cover;
     background-position: center center;
     display: flex;
     align-items: center;
+    justify-content: center;
+    border-radius: 5px;
 }
 
 footer{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
     height: 150px;
     margin-top: 12px;
-    background-color: #42724F;
+    border-radius: 5px;
+    background-color: rgba(22, 175, 180, 0.7);
 }
