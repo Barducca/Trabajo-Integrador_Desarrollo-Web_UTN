@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    color: #3C3C3C;
+    font-family: 'raleway', sans-serif;
+    width: 1100px;
+    margin: auto;
+}
+
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+header{
+    display: flex;
+    height: 80px;
+    font-weight: 600;
+    margin-top: 12px;
+    background-color: rgba(22, 175, 180, 0.6);
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+
+header a img{
+    height: 64px;
+    width: 64px;
+    margin-left: 12px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+main{
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+nav a{
+    margin: 5px;
+}
+
+nav{
+    margin-right: 8px;
+}
+
+#servicios{
+    color: white;
+    background: rgb(22, 175, 180);
+    background: linear-gradient(180deg, rgba(22, 175, 180,0.6) 0%, rgba(34,34,34,0.6) 50%, rgba(0,0,0,0.6) 100%);
+    margin-top: 12px;
+    width: 1100px;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 5px;
+}
+#servicios article{
+    width: 290px;
+}
+
+#servicios h2{
+    font-size: 16px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+#servicios img{
+    border-radius: 5%;
+    box-shadow: 0px 0px 7px 2px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 7px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 7px 2px rgba(0,0,0,0.75);
+}
+
+#form-box{
+    width: 1100px;
+    height: 400px;
+    margin-top: 12px;
+    background-image: url(../img/hero-banner.jpg);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+}
+
+footer{
+    height: 150px;
+    margin-top: 12px;
+    background-color: #42724F;
+}
