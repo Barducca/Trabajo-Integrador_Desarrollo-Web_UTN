@@ -11,9 +11,7 @@
 
     <body>
 
-        <video id="background-video" autoplay loop muted poster="img/background.png">
-            <source src="media/video.mp4" type="video/mp4">
-        </video>
+        <!-- <img id="desc_back" src="img/desc_back.png" alt=""> -->
 
         <header>
             <a href="index.html">
@@ -22,59 +20,82 @@
             </a>
 
             <nav>
-                <a href="index.html">Inicio</a>
+                <a href="index.html#serviciosTitulo">Servicios</a>
+                <a href="index.html#software">Programas</a>
                 <a href="empresa.html">Empresa</a>
-                <a href="tecnologia.html">Tecnologia</a>
-                <a href="contacto.html">Contacto</a>
+                <a href="soporte.html">Soporte</a>
+                <a href="contact.html">Contacto</a>
             </nav>
         </header>
 
         <main>
+            <img id="presentacion" src="img/Presentación.png" alt="Imagen de presentacíon">
+        
             <section id="servicios">
+                <h1 id="serviciosTitulo">Nuestros servicios se adaptan a sus necesidades.</h1>
+
                 <article>
-                    <img id="asd" src="img/firewall.jpg" alt="">
-                    <h2>Administración de Firewals</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident suscipit, est autem hic sequi beatae dolor alias reprehenderit sunt harum. Ad, libero molestias nostrum non dolore consequatur harum necessitatibus numquam!
-                    </p>
+                    <img class="imgSvc" src="img/firewall.jpg" alt="">
+                    
+                    <div class="descripcion">
+                        <h2>ADMINISTRACIÓN DE FIREWALL</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident suscipit, est autem hic sequi beatae dolor alias reprehenderit sunt harum. Ad, libero molestias nostrum non dolore consequatur harum necessitatibus numquam!
+                        </p>
+                        <button onclick="location.href='services.html'">Más info</button>
+                        <img id="firewall_back" src="img/desc_back.png" alt="">
+                    </div>
                 </article>
 
                 <article>
-                    <img src="img/vpn.png" alt="">
-                    <h2>Servicio VPN</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus rem, repudiandae exercitationem dolore eius quo odio aspernatur molestias consequuntur cumque, incidunt a optio, repellendus ipsa odit ratione fugit ea nostrum.
-                    </p>
+                    <div class="descripcion">
+                        <h2>VPN</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus rem, repudiandae exercitationem dolore eius quo odio aspernatur molestias consequuntur cumque, incidunt a optio, repellendus ipsa odit ratione fugit ea nostrum.
+                        </p>
+                        <button onclick="location.href='services.html'">Más info</button>
+                    </div>
+
+                    <img class="imgSvc" src="img/vpn.png" alt="">
+                    <img id="vpn_back" src="img/desc_back.png" alt="">
                 </article>
 
+                <h1 id="software">Actualice su software de seguridad</h1>
+
                 <article>
-                    <img src="img/ciberseguridad.jpeg" alt="">
-                    <h2>Cyberseguridad</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi quo esse aliquid explicabo doloribus earum ratione cumque veritatis quidem dignissimos. Et nemo autem reprehenderit eveniet amet fuga sit. Eius, eum.</p>
+                    <img class="imgSvc" src="img/ciberseguridad.jpeg" alt="">
+
+                    <div class="descripcion">
+                        <h2>CIBERSEGURIDAD</h2>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi quo esse aliquid explicabo doloribus earum ratione cumque veritatis quidem dignissimos. Et nemo autem reprehenderit eveniet amet fuga sit. Eius, eum.
+                        </p>
+
+                        <div id="botones-ciber">
+                            <button>Descargar</button>
+                            <button onclick="location.href='license.html'"> Comprar licencia</button>
+                            <img id="ciber_back" src="img/desc_back.png" alt="">
+                        </div>
+                    </div>
                 </article>
             </section>
-
-            <section id="form-box">
-                <h1>Aqui va el formuario</h1>
-            </section>
-
         </main>
 
         <footer>
-            <a href="#">
+            <a href="index.html">
                 <img class="icon" src="img/dp-icon.png" alt="Logo Planeta">
                 Digital Planet
             </a>
 
-            <p>Copyright&#169</p>
+            <p>&#169 Copyright</p>
 
-            <div id="redesSocilaes">
+            <div id="redesSociales">
                 <a href=""><img src="img/twitter.png" alt="Twitter"></a>
                 <a href=""><img src=""><img src="img/telegram.png" alt="Telegram"></a>
                 <a href=""><img src="img/facebook.png" alt="Facebook"></a>
             </div>
         </footer>
-
-        <script src=""></script>
+        
+        <script src="javascripts/scripts.js"></script>
     </body>
 </html>
