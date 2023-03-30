@@ -6,13 +6,12 @@
         <title>TP-Integrador</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="icon" type="image/vnd.microsoft.icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="css/style-header-footer.css">
+        <link rel="stylesheet" href="css/style-index.css">
     </head>
 
-    <body>
-
-        <!-- <img id="desc_back" src="img/desc_back.png" alt=""> -->
-
+    <body id="index">
         <header>
             <a href="index.html">
                 <img class="icon" src="img/dp-icon.png" alt="Logo Planeta">
@@ -20,8 +19,8 @@
             </a>
 
             <nav>
-                <a href="index.html#serviciosTitulo">Servicios</a>
-                <a href="index.html#software">Programas</a>
+                <a href="index.html#servicios">Servicios</a>
+                <a href="index.html#software">Ciberseguridad</a>
                 <a href="empresa.html">Empresa</a>
                 <a href="soporte.html">Soporte</a>
                 <a href="contact.html">Contacto</a>
@@ -31,8 +30,10 @@
         <main>
             <img id="presentacion" src="img/Presentación.png" alt="Imagen de presentacíon">
         
-            <section id="servicios">
-                <h1 id="serviciosTitulo">Nuestros servicios se adaptan a sus necesidades.</h1>
+            <section id="productos">
+
+                <div style="height: 10px;" id="servicios" ></div>
+                <h1>Nuestros servicios se adaptan a sus necesidades.</h1>
 
                 <article>
                     <img class="imgSvc" src="img/firewall.jpg" alt="">
@@ -60,7 +61,8 @@
                     <img id="vpn_back" src="img/desc_back.png" alt="">
                 </article>
 
-                <h1 id="software">Actualice su software de seguridad</h1>
+                <div style="height: 10px;" id="software"></div>
+                <h1>Actualice su software de seguridad</h1>
 
                 <article>
                     <img class="imgSvc" src="img/ciberseguridad.jpeg" alt="">
@@ -74,8 +76,8 @@
                         <div id="botones-ciber">
                             <button>Descargar</button>
                             <button onclick="location.href='license.html'"> Comprar licencia</button>
-                            <img id="ciber_back" src="img/desc_back.png" alt="">
                         </div>
+                        <img id="ciber_back" src="img/desc_back.png" alt="">
                     </div>
                 </article>
             </section>
@@ -95,7 +97,5 @@
                 <a href=""><img src="img/facebook.png" alt="Facebook"></a>
             </div>
         </footer>
-        
-        <script src="javascripts/scripts.js"></script>
     </body>
 </html>
