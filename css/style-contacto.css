@@ -5,7 +5,6 @@ body{
     font-family: 'raleway', sans-serif;
     max-width: 100%;
     margin: 0 auto;
-    overflow-x: hidden
 }
 
 main{
@@ -26,13 +25,12 @@ h2{
 
 #form-1 input{
     border-radius: 10px;
-    border: 2px solid rgba(0, 0, 0, 0.534);
+    border: 2px solid rgba(0, 0, 0, 0.6);
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 35px;
     width: 400px;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
 }
 
@@ -42,19 +40,18 @@ h2{
 
 #form-1 textarea{
     border-radius: 10px;
-    border: 2px solid rgba(0, 0, 0, 0.534);
+    border: 2px solid rgba(0, 0, 0, 0.6);
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100px;
-    width: 400px; 
-    font-family: Arial, Helvetica, sans-serif;
+    width: 400px;
     font-size: 15px;
     resize: vertical;
 }
 
 #resumen{
-    overflow:auto;
+    overflow: auto;
     width: 500px;
     margin-bottom: 20px;
 }
@@ -66,17 +63,12 @@ h2{
 .label{
 color: #161616;
 text-align: left;
-font-size: 18px;
-line-height: 24px;
+font-size: 1rem;
 }
 
 label.error{
     color: #d9534f;
-    font-size:smaller;
-}
-
-input.error{
-    border-color: solid #d9534f 3px;
+    font-size: smaller;
 }
 
 button{

@@ -3,6 +3,7 @@ $("#form-1").validate({
     rules: {
         nombre: {
             required: true,
+            minlength: 3
         },
         email: {
             required: true,
@@ -12,7 +13,21 @@ $("#form-1").validate({
             required: true,
             maxlength: 200
         }
-    }   
+    },
+    messages: {
+        nombre: {
+            required: "Obligatorio",
+            minlength: "El nombre debe tener almenos 3 caracteres"
+        },
+        email: {
+            required: "Obligatorio",
+            email: "Ingrese un correo valido"
+        },
+        mensaje: {
+            required: "Obligatorio",
+            maxlength: "El mensaje debe ser menor a 200 caracteres"
+        }
+    }
 });
 
 //esconde el formulario 2
