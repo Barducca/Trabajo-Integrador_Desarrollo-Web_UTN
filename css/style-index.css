@@ -1,62 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'raleway', sans-serif;
-    max-width: 100%;
-    margin: 0 auto;
-    overflow-x: hidden
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
 }
 
 main{
-    width: 1128px;
-    align-content: center;
-    margin-top: 65px;
-    margin-bottom: 25px;
+    padding-top: 50px;
 }
 
-h1{
-    display: flex;
-    height: 50px;
-    margin-top: 50px;
-    text-align: center;
-    font-size: 30px;
-    border: #000000 solid 1px;
-    border-radius: 5px;
-    align-items: center;
-    justify-content: center;
+.hero{
+    position: relative;
+	justify-content: center;
+	min-height: 100vh;
+	color: #fff;
+	text-align: center;
+    padding: 100px 50px;
 }
 
-#productos{
-    display: flex;
-    justify-content: space-between;
-    height: fit-content;
-    flex-direction: column;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-#productos article{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+#hero-background{
+    background-image: url(/img/hero.jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    height: 100%;
+    background-size: cover;
+    z-index: -1;
+
+}
+
+section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 80px 80px;
+}
+
+article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+#vpn{
+    flex-direction: row-reverse;
+}
+
+.img-article{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
 }
 
 .descripcion{
     display: flex;
     flex-direction: column;
     width: 500px;
-    height: 300px;
+    min-height: 300px;
+    height:fit-content;
     align-items: center;
     font-size: larger;
 }
 
+h1{
+    display: flex;
+    width: 100%;
+    min-height: 50px;
+    height:fit-content;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border: #000000 solid 1px;
+    border-radius: 5px;
+}
+
+h2{
+    font-size: 28px;
+    margin: 15px 0;
+}
 
 button{
-    width: 220px;
+    width: 100%;
     height: 40px;
     color: white;
     background: #186ADE;
@@ -65,115 +100,14 @@ button{
     margin-bottom: 15px;
 }
 
-/********************************INICIO - CSS para el formulario de contacto********************************/
-::-webkit-input-placeholder{
-    color:#00AEDB;
-    text-align: center;
-}
-
-#form-box input{
-    border-radius: 15px;
-    -moz-border-radius: 15px;
-    border: 2px solid rgb(30, 105, 128);
+#btns-ciberseguridad{
     display: flex;
-    height: 50px;
-    width: 400px; 
-    margin-top: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    display: flex;
-}
-
-#form-box textarea{
-    border-radius: 15px;
-    -moz-border-radius: 15px;
-    border: 2px solid rgb(30, 105, 128);
-    height: 100px;
-    width: 400px; 
-    margin-top: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    display: flex;
-}
-
-#form-box h2, #form-end h2{
-    text-align: center;
-    margin-top: 50px;
-}
-
-#botonEnviar, #botonAtras{
-    align-items: center;
-    border-radius: 15px;
-    -moz-border-radius: 15px;
-    border: 2px solid rgb(30, 105, 128);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: white;
-    background: #186ADE;
-    margin: auto;
-    margin-top: 20px;
-}
-
-#formContact{
-    display: flex;
-    justify-content: center;
-}
-
-.error{
-    color: red;
-    font-style: italic;
-}
-
-/*********************************************FIN************************************************************/
-
-#botones-ciber{
+    width: 100%;
     margin-top: auto;
-}
 
-#servicios h2{
-    font-size: 28px;
-    margin-top: 15px;
-    margin-bottom: 15px;
 }
 
 .imgSvc{
     width: 500px;
     height: 300px;
-    border-radius: 5%;
-    box-shadow: 0px 0px 7px 2px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 0px 0px 7px 2px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 7px 2px rgba(0,0,0,0.75);
-}
-
-#firewall_back{
-    position: absolute;
-    width: 694px;
-    height: 300px;
-    left: 800px;
-    top: 780px;
-    z-index:-1;
-    opacity: 0.7;
-}
-
-#vpn_back{
-    position: absolute;
-    width: 694px;
-    height: 300px;
-    left: -150px;
-    top: 1130px;
-    z-index:-1;
-    opacity: 0.7;
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1)
-}
-
-#ciber_back{
-    position: absolute;
-    width: 694px;
-    height: 300px;
-    left: 800px;
-    top: 1615px;
-    z-index:-1;
-    opacity: 0.7;
 }

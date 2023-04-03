@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'raleway', sans-serif;
+    width: 100%;
+    margin: 0;
+}
+
+main{
+    width: 90%;
+    margin: auto;
+    padding-top: 75px;
+    padding-bottom: 25px;
+}
+

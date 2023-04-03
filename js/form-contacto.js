@@ -16,17 +16,23 @@ $("#form-1").validate({
     },
     messages: {
         nombre: {
-            required: "Obligatorio",
+            required: "Debe ingrese un nombre",
             minlength: "El nombre debe tener almenos 3 caracteres"
         },
         email: {
-            required: "Obligatorio",
+            required: "Debe ingresar un email",
             email: "Ingrese un correo valido"
         },
         mensaje: {
-            required: "Obligatorio",
-            maxlength: "El mensaje debe ser menor a 200 caracteres"
+            required: "Debe ingrese un mensaje",
+            maxlength: "El mensaje debe tener menor a 200 caracteres"
         }
+    },
+    errorPlacement: function(error, element) { 
+        error.insertBefore(element);
+    },
+    success: function(label) {
+        label.addClass("valid").text("Ok!");
     }
 });
 
@@ -42,9 +48,9 @@ $("#botonEnviar").click(function() {
     }
 
     // recopilamos datos del primer fomulario
-    let nombre = $("#nombre").val();
-    let email = $("#email").val();
-    let mensaje = $("#mensaje").val();
+    var nombre = $("#nombre").val();
+    var email = $("#email").val();
+    var mensaje = $("#mensaje").val();
 
     //mostramos un resumen de los datos ingresados en el <div> del segundo formulario
     $("#resumen").html(`<strong>Nombre: </strong>${nombre}<br><br>
@@ -58,6 +64,9 @@ $("#botonEnviar").click(function() {
 
 //agregamos un evento click al boton "atras"      
 $("#botonAtras").click(function() {
+
+    $("label.error").css("display", "none");
+    $(".valid").css("display", "node");
 
     // ocultar el segundo formulario y  vuelve a mostrar el primero
     $("#form-2").hide();
