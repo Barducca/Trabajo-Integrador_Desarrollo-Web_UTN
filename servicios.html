@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Contrata tu servicio</title>
+        <meta name="description" content="html, css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./servicios.css">
+       
+    </head>
+
+    <body>
+        <div>        
+            <H2>¿Desea información sobre alguno de nuestros servicios?</H2>
+
+        </div>     
+        
+        <div>
+            <form class="form-servicios">
+                <div class="form-container">
+                   <label for="nombre">Nombre:</label>
+                   <input type="text" id="nombre" name="nombre" class="datosPersonales">
+    
+                   <label for="apellido">Apellido:</label>
+                   <input type="text" id="apellido" name="apellido" class="datosPersonales"> 
+                
+                   <label for="email">Email:</label>
+                   <input type="email" id="email" name="email" class="datosPersonales"> 
+                
+                   <label for="telefono">Teléfono:</label>
+                   <input type="tel" id="telefono" name="telefono" class="datosPersonales"> 
+
+                </div>
+    
+            </form>
+
+        </div>   
+
+      <div>
+          <p class="texto-servicios">Por favor, indique sobre qué servicio le gustaría recibir información. Puede marcar más de uno.</p>
+
+            <form>
+                <div class="form-container2">
+                    <p class="texto-servicios">Quiero saber más sobre:</p> <br>
+
+                 <input type="checkbox" id="servicio1" name="servicio1" value="Antivirus">
+                 <label for="servicio1">Antivirus</label> <br><br>
+                 <input type="checkbox" id="servicio2" name="servicio2" value="Ciberseguridad">
+                 <label for="servicio2">Ciberseguridad</label> <br><br>  
+                 <input type="checkbox" id="servicio3" name="servicio3" value="Firewall">
+                 <label for="servicio3">Firewall</label> <br> <br>         
+                 <input type="checkbox" id="servicio4" name="servicio4" value="VPN">
+                 <label for="servicio4">VPN</label><br><br>
+                 <input type="checkbox" id="servicio5" name="servicio5" value="Otros">
+                 <label for="servicio5">Otros</label>
+
+                </div>
+
+            </form>
+       
+        </div>
+
+     <form>
+        <div class="form-container3">
+          <p class="texto-servicios">Si necesita agregar información, utilice este espacio:</p>
+       
+          <p class="texto-servicios">Comentario/Consulta</p>
+
+          <textarea name="comentario-consulta" id="comentario-consulta" class="consulta"></textarea> <br><br>
+
+          <input type="submit" class="boton" value="Enviar">
+
+        </div>
+
+     </form>
+
+
+
+            
+
+
+        
+        
+     <script src="servicios.js"></script>
+    </body>
+</html>
