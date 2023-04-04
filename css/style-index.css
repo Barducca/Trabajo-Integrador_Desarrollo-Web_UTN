@@ -9,6 +9,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     width: 100%;
+    background-color: aliceblue;
 }
 
 main{
@@ -16,6 +17,7 @@ main{
 }
 
 .hero{
+    display: flex;
     position: relative;
 	justify-content: center;
 	min-height: 100vh;
@@ -29,11 +31,19 @@ main{
     position: absolute;
     top: 0;
     left: 0;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     width: 100%;
     height: 100%;
-    background-size: cover;
+    background-size: 100%;
     z-index: -1;
+}
 
+#transition{
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    align-self:flex-end;
 }
 
 section{
@@ -47,7 +57,6 @@ article{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     width: 100%;
     gap: 50px;
     margin-top: 50px;
@@ -61,12 +70,15 @@ article{
     width: 100%;
     max-width: 500px;
     height: auto;
+    -webkit-filter: drop-shadow(5px 5px 5px rgba(8, 6, 104,0.45));
+    filter: drop-shadow(5px 5px 5px rgba(8, 6, 104,0.45));
 }
 
 .descripcion{
     display: flex;
     flex-direction: column;
-    width: 500px;
+    max-width: 500px;
+    width: 100%;
     min-height: 300px;
     height:fit-content;
     align-items: center;
@@ -80,29 +92,130 @@ h1{
     height:fit-content;
     align-items: center;
     justify-content: center;
-    font-size: 30px;
+    font-size: xx-large;
     border: #000000 solid 1px;
     border-radius: 5px;
 }
 
 h2{
-    font-size: 28px;
+    font-size: larger;
     margin: 15px 0;
 }
 
 button{
+    position: relative;
     width: 100%;
     height: 40px;
-    color: white;
-    background: #186ADE;
-    border-radius: 12px;
+    font-size: 15px;
+    color: rgb(8, 6, 104);
+    font-weight:600;
+    text-shadow: 1px 2px 8px rgba(8, 6, 104,0.45);
+    background: #87c9ec;
+    background: radial-gradient(circle farthest-corner at center center, #87c9ec 0%, #29abe1 80%);
+    border-radius: 50px;
     margin-top: auto;
     margin-bottom: 15px;
+    border: 1px solid rgba(8, 6, 104, 0.2);
+    box-shadow: 0px 5px 10px 5px rgba(8, 6, 104,0.2);
+    transition: 0.5s;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    overflow: hidden;
 }
 
-#btns-ciberseguridad{
+button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+button:hover span {
+  padding-right: 25px;
+}
+
+button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+button:after {
+    content: "";
+    background: #b5ebf8;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+
+button:hover{
+    box-shadow: 0px 5px 10px 5px rgba(8, 6, 104,0.3);
+}
+
+#btns-dp-protect{
     display: flex;
     width: 100%;
     margin-top: auto;
-
+    gap: 10px;
 }
+
+@media (max-width: 1000px){
+
+    article{
+        flex-wrap: wrap;
+    }
+
+    .descripcion{
+        font-size: medium;
+    }
+
+    h1{
+        font-size: x-large;
+    }
+}
+
+@media (max-width: 810px) and (min-width: 429px){
+    section{
+        padding: 40px 40px;
+    }
+
+    h1{
+        font-size: large;
+    }
+}
+
+@media (max-width: 428px){
+    section{
+        padding: 30px 20px;
+    } 
+
+    .descripcion{
+        font-size: small;
+    }
+
+    h1{
+        font-size:medium
+    }
+}
+
