@@ -66,7 +66,6 @@ $("#botonEnviar").click(function() {
 $("#botonAtras").click(function() {
 
     $("label.error").css("display", "none");
-    $(".valid").css("display", "node");
 
     // ocultar el segundo formulario y  vuelve a mostrar el primero
     $("#form-2").hide();

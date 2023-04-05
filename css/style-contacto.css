@@ -1,50 +1,49 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body{
-    font-family: 'raleway', sans-serif;
-    width: 100%;
-    margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 main{
     width: 90%;
+    height: 100vh;
     margin: auto;
     padding-top: 75px;
-    padding-bottom: 25px;
 }
 
 #background{
-    background-image: url(/img/background-contact.jpg);
+    background-image: url(/img/background-contact.png);
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-size:cover;
-    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     z-index: -1;
 }
 
 h2{
     text-align: center;
     font-size: 25px;
-    color: rgb(255, 255, 255);
     margin-top: 0;
     margin-bottom: 20px;
 }
 
-#form-1, #form-2{
+form{
+    display: flex;
+    flex-direction: column;
     max-width: 500px;
+    min-height: 480px;
     padding:20px;
     margin-left: 50px;
     background-color: rgba(153, 153, 153, 0.3);
     border-radius: 5px;
-}
-
-#resumen{
-    margin-bottom: 20px;
+    color:white;
 }
 
 input, textarea{
@@ -52,53 +51,48 @@ input, textarea{
     font-size: 15px;
     padding: 10px 10px;
     margin-bottom: 20px;
-    border: 1px solid rgba(58, 58, 58, 0.6);
     border-radius: 5px;
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.2)
 }
 
 input:focus, textarea:focus{
     outline-style: groove;
-    outline-color: rgba(2, 2, 189, 0.7);
+    outline-color: 2px rgba(2, 2, 189, 0.7);
 }
 
 input:placeholder-shown, textarea:placeholder-shown {
-    border: 1px solid rgba(60, 60, 60, 0.6); 
+    border: 1px solid rgba(60, 60, 60, 0.6);
 }
 
 textarea{
     resize: none;
-    margin-bottom: 15px;
-    height: 150px;
+    height: 100px;
 }
 
-#botonEnviar{
-    color: white;
-    background: #186ADE;
+#botonEnviar, #botonAtras{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    font-weight:600;
+    text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.5);
+    background: #0a66dde0;
     border-radius: 5px;
-    border: 1px solid rgba(60, 60, 60, 0.6);
-    font-size: 18px;
-    padding: 10px;
-    cursor:pointer;
-    margin: 0;
+    margin-top: auto;
+    margin-bottom: 15px;
+    border: 1px solid rgba(8, 6, 104, 0.2);
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.2);
+    
+    cursor: pointer;
 }
 
-#botonEnviar:focus{
-    outline-style: none;
-    border: 1px solid rgba(60, 60, 60, 0.6);
+#botonEnviar:hover, #botonAtras:hover{
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.4);
 }
 
-#botonEnviar:hover{
-    background-color: rgb(48, 81, 142);
-}
-
-#botonAtras, #botonDescargar{
-    margin: 0;
-}
-
-#form-2-btn{
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
+#botonAtras{
+    align-self:flex-end;
 }
 
 .error{

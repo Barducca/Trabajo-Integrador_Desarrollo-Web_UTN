@@ -1,17 +1,15 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body{
-    font-family: 'raleway', sans-serif;
-    width: 100%;
-    margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 main{
     width: 90%;
     margin: auto;
-    padding-top: 75px;
-    padding-bottom: 25px;
 }
 
