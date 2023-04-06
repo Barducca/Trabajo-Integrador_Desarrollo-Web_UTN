@@ -168,6 +168,13 @@ button:hover{
     gap: 10px;
 }
 
+#show{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 @media (max-width: 1000px){
 
     article{
