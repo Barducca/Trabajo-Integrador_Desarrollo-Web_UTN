@@ -6,23 +6,63 @@
         <title>Digital Planet</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" type="image/vnd.microsoft.icon" href="img/favicon.ico">
+        <link rel="icon" type="image/vnd.microsoft.icon" href="./img/dp-icon.png">
         <link rel="stylesheet" href="css/style-header-footer.css">
         <link rel="stylesheet" href="css/style-productos.css">
     </head>
 
     <body>
         <header>
-            <a href="index.html">
-                <img class="icon" src="img/dp-icon.png" alt="Logo Planeta">
-                DIGITAL PLANET
-            </a>
-
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="empresa.html">Empresa</a>
-                <a href="soporte.html">Soporte</a>
-                <a href="contacto.html">Contacto</a>
+            <nav class="menu">
+                <div class="menu__container">
+                    <a href="./index.html">
+                        <img class="icon" src="./img/dp-icon.png" alt="">
+                        DIGITAL PLANET
+                    </a>
+        
+                    <ul class="menu__links">
+                        <li class="menu__item">
+                            <a href="./index.html" class="menu__link">Inicio</a>
+                        </li>
+            
+                        <li class="menu__item menu__item--show">
+                            <a href="#" class="menu__link">Servicios<img src="./assets/arrow.svg" class="menu__arrow"></a>
+            
+                            <ul class="menu__nesting">
+                                <li class="menu__inside">
+                                    <a href="./index.html#servicio-firewall" class="menu__link menu__link--inside">Administración de firewall</a>
+                                </li>
+                                <li class="menu__inside">
+                                    <a href="./index.html#servicio-vpn" class="menu__link menu__link--inside">VPN</a>
+                                </li>
+                                <li class="menu__inside">
+                                    <a href="./index.html#producto-dp-protect" class="menu__link menu__link--inside">Digital Planet Protect</a>
+                                </li>
+                            </ul>
+                        </li>
+            
+                        <li class="menu__item  menu__item--show">
+                            <a href="#" class="menu__link">Proyecto<img src="./assets/arrow.svg" class="menu__arrow"></a>
+            
+                            <ul class="menu__nesting">
+                                <li class="menu__inside">
+                                    <a href="./empresa.html" class="menu__link menu__link--inside">Empresa</a>
+                                </li>
+                                <li class="menu__inside">
+                                    <a href="./empresa.html#integrantes" class="menu__link menu__link--inside">Integrantes</a>
+                                </li>
+                            </ul>
+                        </li>
+            
+                        <li class="menu__item">
+                            <a href="./contacto.html" class="menu__link">Contacto</a>
+                        </li>
+                    </ul>
+        
+                    <div class="menu__hamburguer">
+                        <img src="./assets/menu.svg" class="menu__img">
+                    </div>
+                </div>
             </nav>
         </header>
 
@@ -47,6 +87,7 @@
         
         <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
-        <script src="javascripts/form-productos.js"></script>
+        <script src="./javascripts/form-productos.js"></script>
+        <script src="./js/header-menu.js"></script>
     </body>
 </html>
