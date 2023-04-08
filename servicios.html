@@ -5,11 +5,11 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Digital Planet - Servicios</title>
-        <meta name="Solicitud de información" content="formularios de servicios y datos personales">
+        <meta name="Solicitud de información" content="formularios">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/vnd.microsoft.icon" href="./img/dp-icon.png">
         <link rel="stylesheet" href="./css/style-header-footer.css">
-        <link rel="stylesheet" href="./servicios.css">
+        <link rel="stylesheet" href="./css/style-servicios.css">
 
     </head>
 
@@ -22,6 +22,8 @@
                         <img class="icon" src="./img/dp-icon.png" alt="">
                         DIGITAL PLANET
                     </a>
+
+                    <div id="show"></div>
         
                     <ul class="menu__links">
                         <li class="menu__item">
@@ -74,34 +76,51 @@
 
             <div id="container__form-servicios" class="form-container">
 
-                <h2>Por favor, indique sobre qué servicio le gustaría recibir información.  Puede marcar más de uno.</h2>
+                <h2>Por favor, indique sobre qué servicio le gustaría recibir información.</h2>
     
                 <form id="form-servicios">
     
-                    <p>Quiero saber más sobre:</p>
-    
+                    <p>Quiero saber más sobre (puede seleccionar varios):</p>
                     
-                    <label for="servicio__dp-protect">
-                        <input type="checkbox" id="servicio__dp-protect" name="servicio__dp-protect" value="dp-protect" class="checkbox">
-                        Digital Planet Protect
-                    </label>
     
                     <label for="servicio__firewall">
-                        <input type="checkbox" id="servicio__firewall" name="servicio__firewall" value="firewall" class="checkbox">
+
+                        <img src="./img/prod-firewall.jpg" alt="">
+
+                        <input 
+                            type="checkbox" 
+                            id="servicio__firewall" 
+                            name="servicios" 
+                            value="Administración de firewall"
+                        />
                         Firewall
                     </label>
     
                     <label for="servicio__vpn">
-                        <input type="checkbox" id="servicio__vpn" name="servicio__vpn" value="vpn" class="checkbox">
+                        <img src="./img/prod-vpn.png" alt="">
+
+                        <input 
+                            type="checkbox" 
+                            id="servicio__vpn" 
+                            name="servicios" 
+                            value="VPN"
+                        />
                         VPN
                     </label>
-    
-                    <label for="servicio__otros">
-                        <input type="checkbox" id="servicio__otros" name="servicio__otros" value="otros" class="checkbox">
-                        Otros
+
+                    <label for="servicio__dp-protect">
+                        <img src="./img/prod-ciberseguridad.jpg" alt="">
+
+                        <input 
+                            type="checkbox" 
+                            id="servicio__dp-protect" 
+                            name="servicios" 
+                            value="Digital planet protect"
+                        />
+                        Digital Planet Protect
                     </label>
     
-                    <button type="button" id="boton__servicios-siguiente"><span>Siguiente</span></button>
+                    <button type="button" id="boton__servicios-siguiente" class="boton-siguiente"><span>Siguiente</span></button>
     
                 </form>
     
@@ -114,16 +133,39 @@
     
                 <form id="form-datos">
     
-                    <input type="text" id="nombre" name="nombre" placeholder="Nombre:" class="datos">
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre:">
     
-                    <input type="text" id="apellido" name="apellido" placeholder="Apellido:" class="datos">
+                    <input type="text" id="apellido" name="apellido" placeholder="Apellido:">
+
+                    <input type="tel" id="telefono" name="telefono" placeholder="Teléfono (opcional):">
     
-                    <input type="email" id="email" name="email" placeholder="Email:" class="datos">
-    
-                    <input type="tel" id="telefono" name="telefono" placeholder="Teléfono:" class="datos">
-    
+                    <input type="email" id="email" name="email" placeholder="Email:">
+
+                    <p>Que forma de contacto prefiere?</p>
+                   
+                    <label for="eleccion-email">
+                        <input 
+                            type="radio" 
+                            id="eleccion-email" 
+                            name="eleccion-contacto" 
+                            value="email"
+                        />
+                        Email
+                    </label>
+
+                    <label for="eleccion-telefono">
+                        <input 
+                            type="radio" 
+                            id="eleccion-telefono" 
+                            name="eleccion-contacto" 
+                            value="telefono"
+                        />
+                        Teléfono
+                    </label>
+
                     <button type="button" id="boton__datos-atras" class="boton-atras"><span>Atrás</span></button>
-                    <button type="button" id="boton__datos-siguiente"><span>Siguiente</span></button>
+
+                    <button type="button" id="boton__datos-siguiente" class="boton-siguiente"><span>Siguiente</span></button>
     
                 </form>
     
@@ -136,12 +178,25 @@
                     
                     <p>Si necesita agregar información, utilice este espacio:</p>
             
-                    <p>Comentario/Consulta</p>
-            
-                    <textarea id="comentario-consulta" name="comentario-consulta" class="datos"></textarea>
+                    <textarea id="comentario-consulta" name="comentario-consulta" placeholder="Ingrese aqui su comentario o consulta"></textarea>
             
                     <button type="button" id="boton__comentario-atras" class="boton-atras"><span>Atrás</span></button>
-                    <button type="button" id="boton__comentario-enviar"><span>Enviar</span></button>
+
+                    <button type="button" id="boton__comentario-enviar" class="boton-siguiente"><span>Enviar</span></button>
+            
+                </form>
+            
+            </div>
+
+            <div id="container__form-resumen"  class="form-container">
+    
+                <form id="form-resumen">
+                    
+                    <p>Solicitud enviada.</p>
+            
+                    <textarea id="resumen" ></textarea>
+            
+                    <button type="button" id="boton__resumen-descargar" class="boton-siguiente"><span>Descargar</span></button>
             
                 </form>
             
@@ -167,7 +222,10 @@
         
         </footer>
 
-        <script src="servicios.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+        <script src="./js/header-menu.js"></script>
+        <script src="./js/servicios.js"></script>
     </body>
 
 </html>

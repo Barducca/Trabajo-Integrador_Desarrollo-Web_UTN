@@ -1,7 +1,4 @@
-a{
-    color: white;
-    text-decoration: none;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
 
 /*-HEADER--------------------------------------------------------------------------------------------------*/
 
@@ -15,6 +12,11 @@ header{
     background-color: #1E1E1E;
     color: white;
     height: 50px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
 }
 
 .menu__container{
