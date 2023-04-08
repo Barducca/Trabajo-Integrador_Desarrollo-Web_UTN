@@ -8,8 +8,7 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    background-image: linear-gradient(rgba(25, 42, 84, 0.9), rgba(5,7,12,0.90)),
-                      url();
+    background-image: url(../img/background-servicios.png);
     background-size: 100% 100%;
     color: #fff;
 }
@@ -92,6 +91,7 @@ form{
     text-align: center;
     display: block;
     cursor:pointer;
+    align-self: flex-start;
 }
 
 #form-servicios button{

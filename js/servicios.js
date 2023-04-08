@@ -111,7 +111,7 @@ $("#boton__comentario-atras").click(function() {
 });
 
 
-//agregamos un evento click al boton "enviar" 
+//agregamos la opción de descargar un comprobante en dpf. 
 $("#boton__resumen-descargar").click(function() {
 
     
