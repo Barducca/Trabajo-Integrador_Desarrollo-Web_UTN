@@ -11,6 +11,10 @@ body{
     background-color: aliceblue;
 }
 
+main{
+    padding-top: 50px;
+}
+
 section{
 	display: flex;
 	flex-direction: column;

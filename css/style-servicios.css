@@ -8,8 +8,9 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    background-image: url(../img/background-servicios.png);
-    background-size: 100% 100%;
+    background-image: url(../img/background.png);
+    background-size: cover;
+    background-attachment: fixed;
     color: #fff;
 }
 
@@ -39,7 +40,7 @@ form{
     max-width: 800px;
     min-height: 420px;
     padding:30px;
-    background-color: rgba(78, 78, 85, 0.3);
+    background-color: rgba(26, 28, 39, 0.8);
     border-radius: 5px;
 }
 
@@ -114,7 +115,6 @@ form{
     grid-template-rows: 1em auto 1em auto;
     align-items: center;
     column-gap: 1rem;
-   
 }
 
 #form-datos input{
@@ -219,7 +219,33 @@ form{
 /*--------Formulario resumen--------*/
 /*-------------------------------------*/
 
+#form-resumen h3{
+    color: green;
+}
 
+#resumen{
+    height: fit-content;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0px 0px 5px 1px rgba(255,255,255,0.75) inset;
+    border: 1px solid hsla(260, 15%, 80%, 0.5);
+}
+
+#resumen p{
+    text-decoration: underline;
+}
+
+#resumen ul{
+    margin-left: 20px;
+}
+
+#resumen div{
+    margin-left: 10px;
+}
+
+#form-resumen button{
+    justify-self: center;
+}
 
 button{
     position: relative;

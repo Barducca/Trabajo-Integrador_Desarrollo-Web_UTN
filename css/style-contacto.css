@@ -7,64 +7,114 @@
 }
 
 body{
-    background-color: linear-gradient(rgba(25, 42, 84, 0.9), rgba(5,7,12,0.90));
     font-family: 'Poppins', sans-serif;
+    background-image: url(../img/background.png);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
 }
 
 main{
     width: 90%;
     margin: auto;
     min-height: 100vh;
-    padding-top: 80px;
+    padding-top: 50px;
 }
 
-#background{
-    background-image: url(/img/background-contact.png);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: -1;
+h1{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 30px;
 }
 
 h2{
     text-align: center;
-    font-size: 25px;
-    margin-top: 0;
-    margin-bottom: 40px;
+    font-size: 20px;
+    color: green;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;       
 }
 
 form{
-    display: flex;
-    flex-direction: column;
-    max-width: 500px;
-    min-height: 480px;
-    padding:20px;
-    margin-left: 50px;
-    background-color: rgba(153, 153, 153, 0.794);
+    display: grid;
+    width: 100%;
+    max-width: 520px;
+    min-height: 450px;
+    padding: 30px;
+    background-color: rgba(26, 28, 39, 0.8);
     border-radius: 5px;
-    color:white;
+}
+
+#form-1{
+    grid-template-areas:"nombre-error"
+                        "nombre"
+                        "email-error"
+                        "email"
+                        "telefono-error"
+                        "telefono"
+                        "mensaje-error"
+                        "mensaje"
+                        "submit";
+    grid-template-rows: 1em 3.2em 1em 3.2em 1em 3.2em 1em auto;
+    align-items: flex-start;
+    column-gap: 1rem;
+}
+
+#nombre-error{
+    grid-area: nombre-error;
+}
+
+#nombre{
+    grid-area: nombre;
+}
+
+#email-error{
+    grid-area: email-error;
+}
+
+#email{
+    grid-area: email;
+}
+
+#telefono{
+    grid-area: telefono;
+}
+
+#mensaje-error{
+    grid-area: mensaje-error;
+}
+
+#mensaje{
+    grid-area: mensaje;
+}
+
+#botonEnviar{
+    grid-area: submit;
+}
+
+.error{
+    font-size: small;
+    color: red;
+}
+
+.valid{
+    font-size: small;
+    color: rgb(16, 241, 16);
 }
 
 .inputs{
     width: 100%;
     font-size: 15px;
+    margin-top: 5px;
     padding: 10px 10px;
-    margin-bottom: 20px;
     border-radius: 5px;
-    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.2)
-}
-
-.inputs:focus{
-    outline-style: groove;
-    outline-color: 2px rgba(2, 2, 189, 0.7);
-}
-
-.inputs:placeholder-shown {
-    border: 1px solid rgba(60, 60, 60, 0.6);
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.2);
+    color: black;
 }
 
 textarea{
@@ -83,7 +133,6 @@ button{
     background: #0a66dde0;
     border-radius: 50px;
     margin-top: auto;
-    margin-bottom: 15px;
     border: 1px solid rgba(8, 6, 104, 0.2);
     box-shadow: 0px 5px 10px 5px rgba(8, 6, 104,0.2);
     transition: 0.3s;
@@ -94,31 +143,30 @@ button{
 }
 
 button span {
-  cursor: pointer;
   display: inline-block;
   position: relative;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
-button span:after {
+.boton-siguiente span:after {
   content: '\00bb';
   position: absolute;
   opacity: 0;
   top: 0;
   right: -20px;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
-button:hover span {
+.boton-siguiente:hover span {
   padding-right: 25px;
 }
 
-button:hover span:after {
+.boton-siguiente:hover span:after {
   opacity: 1;
   right: 0;
 }
 
-button:after {
+.boton-siguiente:after {
     content: "";
     background: #b5ebf8;
     display: block;
@@ -131,7 +179,7 @@ button:after {
     transition: all 0.8s
 }
   
-button:active:after {
+.boton-siguiente:active:after {
     padding: 0;
     margin: 0;
     opacity: 1;
@@ -142,22 +190,35 @@ button:hover{
     box-shadow: 0px 5px 10px 5px rgba(8, 6, 104,0.3);
 }
 
-.error{
-    border: 1px solid rgba(255, 0, 0, 0.7);
+.boton-atras span:before{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 20px;
+    transition: 0.3s;
+    transform: rotate(180deg);
 }
 
-.valid{
-    border: 1px solid rgba(0, 128, 0, 0.7);
+.boton-atras:hover span {
+    padding-left: 25px;
 }
 
-label.error{
-    color: #d9534f;
-    font-size: smaller;
-    border: none;
+.boton-atras:hover span::before {
+    opacity: 1;
+    left: 0;
 }
 
-label.valid{
-    color: rgb(52, 190, 33);
-    font-size: smaller;
-    border: none;
+.boton-atras:after {
+    content: "";
+    background: #b5ebf8;
+    display: block;
+    position: absolute;
+    right: 0;
+    padding-top: 300%;
+    padding-right: 350%;
+    margin-right: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
 }

@@ -82,16 +82,11 @@
     
                     <p>Quiero saber más sobre (puede seleccionar varios):</p>
                     
-    
                     <label for="servicio__firewall">
-
                         <img src="./img/prod-firewall.jpg" alt="">
 
                         <input 
-                            type="checkbox" 
-                            id="servicio__firewall" 
-                            name="servicios" 
-                            value="Administración de firewall"
+                            type="checkbox" id="servicio__firewall" name="servicios" value="Administración de firewall"
                         />
                         Administración de firewall
                     </label>
@@ -100,10 +95,7 @@
                         <img src="./img/prod-vpn.png" alt="">
 
                         <input 
-                            type="checkbox" 
-                            id="servicio__vpn" 
-                            name="servicios" 
-                            value="VPN"
+                            type="checkbox" id="servicio__vpn" name="servicios" value="VPN"
                         />
                         VPN
                     </label>
@@ -112,10 +104,7 @@
                         <img src="./img/prod-ciberseguridad.jpg" alt="">
 
                         <input 
-                            type="checkbox" 
-                            id="servicio__dp-protect" 
-                            name="servicios" 
-                            value="Digital planet protect"
+                            type="checkbox" id="servicio__dp-protect" name="servicios"  value="Digital planet protect"
                         />
                         Digital Planet protect
                     </label>
@@ -144,22 +133,13 @@
                     <p>Que forma de contacto prefiere?</p>
                    
                     <label for="eleccion-email">
-                        <input 
-                            type="radio" 
-                            id="eleccion-email" 
-                            name="eleccion-contacto" 
-                            value="email"
-                            checked
+                        <input type="radio" id="eleccion-email" name="eleccion-contacto" value="Email" checked
                         />
                         Email
                     </label>
 
                     <label for="eleccion-telefono">
-                        <input 
-                            type="radio" 
-                            id="eleccion-telefono" 
-                            name="eleccion-contacto" 
-                            value="telefono"
+                        <input type="radio" id="eleccion-telefono" name="eleccion-contacto" value="Teléfono"
                         />
                         Teléfono
                     </label>
@@ -193,11 +173,11 @@
     
                 <form id="form-resumen">
                     
-                    <p>Solicitud enviada.</p>
+                    <h3>Solicitud enviada.</h3>
             
-                    <textarea id="resumen" ></textarea>
+                    <div id="resumen"></div>
             
-                    <button type="button" id="boton__resumen-descargar" class="boton-siguiente"><span>Descargar</span></button>
+                    <button type="button" id="boton__resumen-descargar" class="boton-siguiente"><span>Descargar comprobante</span></button>
             
                 </form>
             
@@ -209,24 +189,27 @@
         <footer>
         
             <a href="index.html">
-                <img class="icon" src="img/dp-icon.png" alt="Logo Planeta">
+                <img class="icon" src="./img/dp-icon.png" alt="Logo Planeta">
                 DIGITAL PLANET
             </a>
     
             <p>&#169 Copyright</p>
     
             <div id="redesSociales">
-                <a href=""><img src="img/twitter.png" alt="Twitter"></a>
-                <a href=""><img src="img/telegram.png" alt="Telegram"></a>
-                <a href=""><img src="img/facebook.png" alt="Facebook"></a>
+                <a href=""><img src="./img/twitter.png" alt="Twitter"></a>
+                <a href=""><img src="./img/telegram.png" alt="Telegram"></a>
+                <a href=""><img src="./img/facebook.png" alt="Facebook"></a>
             </div>
         
         </footer>
+        
 
-        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
-        <script src="./js/header-menu.js"></script>
-        <script src="./js/servicios.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script>
+        <script type="text/javascript" src="./js/header-menu.js"></script>
+        <script type="text/javascript" src="./js/servicios.js"></script>
+
     </body>
 
 </html>

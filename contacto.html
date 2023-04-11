@@ -12,6 +12,7 @@
     </head>
 
     <body>
+
         <header>
             <nav class="menu">
                 <div class="menu__container">
@@ -68,30 +69,39 @@
             </nav>
         </header>
 
+
         <main>
 
-            <div id="background"></div>
+            <h1>Contáctenos</h1>
 
-            <form id="form-1">
+            <div id="container__form-1" class="form-container">
 
-                <h2>Contáctenos</h2>
+                <form id="form-1">
 
-                <input type="text" id="nombre" name="nombre" class="inputs" placeholder="Nombre:">
-                <input type="email" id="email" name="email" class="inputs" placeholder="Email:">
-                <input type="text" id="telefono" name="telefono" class="inputs" placeholder="Teléfono: (opcional)">
-                <textarea id="mensaje" name="mensaje" class="inputs" placeholder="Mensaje:"></textarea>
-                <button type="button" id="botonEnviar"><span>Enviar</span></button>
+                    <input type="text" id="nombre" name="nombre" class="inputs" placeholder="Nombre:">
+                    <input type="email" id="email" name="email" class="inputs" placeholder="Email:">
+                    <input type="text" id="telefono" name="telefono" class="inputs" placeholder="Teléfono: (opcional)">
+                    <textarea id="mensaje" name="mensaje" class="inputs" placeholder="Mensaje (debe tener 200 caracteres o menos):"></textarea>
+                    <button type="button" id="botonEnviar" class="boton-siguiente"><span>Enviar</span></button>
+    
+                </form>
 
-            </form>
+            </div>
 
-            <form id="form-2">
+            <div id="container__form-2" class="form-container">
 
-                <h2>Datos enviados correctamente.</h2>
-                <div id="resumen"></div>
-                <button type="button" id="botonAtras"><span>Volver</span></button>
-                    
-            </form>
+                <form id="form-2">
+
+                    <h2>Datos enviados correctamente.</h2>
+                    <div id="resumen"></div>
+                    <button type="button" id="botonAtras" class="boton-atras"><span>Volver</span></button>
+                        
+                </form>
+
+            </div>
+
         </main>
+
 
         <footer>
             <a href="index.html">
@@ -112,5 +122,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
         <script src="./js/header-menu.js"></script>
         <script src="./js/contacto.js"></script>
+
     </body>
+
 </html>
