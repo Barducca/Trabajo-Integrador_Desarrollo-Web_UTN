@@ -192,3 +192,25 @@ $("#boton__resumen-descargar").click(function() {
 
 });
 
+$("input:checkbox").change(function(){
+    if($("#servicio__firewall").is(":checked")){
+        $("#img__firewall").addClass("animate__pulse")
+    }
+    else{
+        $("#img__firewall").removeClass("animate__pulse")
+    }
+
+    if($("#servicio__vpn").is(":checked")){
+        $("#img__vpn").addClass("animate__pulse")
+    }
+    else{
+        $("#img__vpn").removeClass("animate__pulse")
+    }
+    
+    if($("#servicio__dp-protect").is(":checked")){
+        $("#img__dp-protect").addClass("animate__pulse")
+    }
+    else{
+        $("#img__dp-protect").removeClass("animate__pulse")
+    }
+});

@@ -21,7 +21,7 @@
         });
 
         function mostrarDatos(data) {
-            return "<h3>" + data.main.temp + " &deg;C</h3>" +
-                "<h3><img src='https://openweathermap.org/img/wn/" + 
-                data.weather[0].icon + ".png'></h3>" ;
+            return "<h4>" + data.main.temp + " &deg;C</h4>" +
+                "<h4><img src='https://openweathermap.org/img/wn/" + 
+                data.weather[0].icon + ".png'></h4>" ;
         }
