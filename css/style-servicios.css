@@ -52,15 +52,21 @@ form{
     grid-template-areas: 
         "texto      texto   texto"
         "firewall   vpn     software"
+        "error      error   error"
         "boton      boton   boton";
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 10% auto 20%;
+    grid-template-rows: 1.5em auto 1em auto;
     align-items: center;
-    gap: 15px
+    column-gap: 15px;
+    row-gap: 10px;
 }
 
 #form-servicios p{
     grid-area: texto;
+}
+
+#servicios-error{
+    grid-area: error;
 }
 
 #form-servicios button{
@@ -82,7 +88,6 @@ form{
     cursor: pointer;
     box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.2);
 }
-
 
 #form-servicios input[type=checkbox]:checked {
     outline:hidden;

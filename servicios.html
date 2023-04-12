@@ -85,36 +85,63 @@
                     <p>Quiero saber más sobre (puede seleccionar varios):</p>
                     
                     <label for="servicio__firewall">
-                        <img id="img__firewall" src="./img/prod-firewall.jpg" alt="" class="animate__animated">
-
-                        <input 
-                            type="checkbox" id="servicio__firewall" name="servicios" value="Administración de firewall"
+                        <img 
+                            id="img__firewall"
+                            src="./img/prod-firewall.jpg"
+                            alt=""
+                            class="animate__animated"
+                        />
+                        <input
+                            id="servicio__firewall"
+                            type="checkbox"
+                            name="servicios"
+                            value="Administración de firewall"
                         />
                         Administración de firewall
                     </label>
     
                     <label for="servicio__vpn">
-                        <img id="img__vpn" src="./img/prod-vpn.png" alt="" class="animate__animated">
-
-                        <input 
-                            type="checkbox" id="servicio__vpn" name="servicios" value="VPN"
+                        <img 
+                            id="img__vpn"
+                            src="./img/prod-vpn.png"
+                            alt=""
+                            class="animate__animated"
+                        />
+                        <input
+                            id="servicio__vpn"
+                            type="checkbox"
+                            name="servicios"
+                            value="VPN"
                         />
                         VPN
                     </label>
 
                     <label for="servicio__dp-protect">
-                        <img id="img__dp-protect" src="./img/prod-ciberseguridad.jpg" alt="" class="animate__animated">
-
-                        <input 
-                            type="checkbox" id="servicio__dp-protect" name="servicios"  value="Digital planet protect"
+                        <img 
+                            id="img__dp-protect"
+                            src="./img/prod-ciberseguridad.jpg"
+                            alt=""
+                            class="animate__animated"
+                        />
+                        <input
+                            id="servicio__dp-protect"
+                            type="checkbox"
+                            name="servicios"
+                            value="Digital planet protect"
                         />
                         Digital Planet protect
                     </label>
+
+                    <div id="servicios-error"></div>
     
-                    <button type="button" id="boton__servicios-siguiente" class="boton-siguiente"><span>Siguiente</span></button>
-    
+                    <button
+                        id="boton__servicios-siguiente"
+                        type="button"
+                        class="boton-siguiente">
+                        <span>Siguiente</span>
+                    </button>
+
                 </form>
-    
             </div>
     
     
@@ -124,34 +151,68 @@
     
                 <form id="form-datos">
     
-                    <input type="text" id="nombre" name="nombre" placeholder="Nombre:">
-    
-                    <input type="text" id="apellido" name="apellido" placeholder="Apellido:">
-
-                    <input type="tel" id="telefono" name="telefono" placeholder="Teléfono (opcional):">
-    
-                    <input type="email" id="email" name="email" placeholder="Email:">
+                    <input
+                        id="nombre"
+                        type="text"
+                        name="nombre" 
+                        placeholder="Nombre:"
+                    />
+                    <input
+                        id="apellido"
+                        type="text"
+                        name="apellido"
+                        placeholder="Apellido:"
+                    />
+                    <input
+                        id="telefono"
+                        type="tel"
+                        name="telefono"
+                        placeholder="Teléfono (opcional):"
+                    />
+                    <input
+                        id="email"
+                        type="email"
+                        name="email"
+                        placeholder="Email:"
+                    />
 
                     <p>Que forma de contacto prefiere?</p>
                    
                     <label for="eleccion-email">
-                        <input type="radio" id="eleccion-email" name="eleccion-contacto" value="Email" checked
+                        <input
+                            id="eleccion-email"
+                            type="radio"
+                            name="eleccion-contacto"
+                            value="Email" checked
                         />
                         Email
                     </label>
 
                     <label for="eleccion-telefono">
-                        <input type="radio" id="eleccion-telefono" name="eleccion-contacto" value="Teléfono"
+                        <input
+                            id="eleccion-telefono"
+                            type="radio"
+                            name="eleccion-contacto"
+                            value="Teléfono"
                         />
                         Teléfono
                     </label>
 
-                    <button type="button" id="boton__datos-atras" class="boton-atras"><span>Atrás</span></button>
+                    <button
+                        id="boton__datos-atras"
+                        type="button"
+                        class="boton-atras">
+                        <span>Atrás</span>
+                    </button>
 
-                    <button type="button" id="boton__datos-siguiente" class="boton-siguiente"><span>Siguiente</span></button>
+                    <button
+                        id="boton__datos-siguiente"
+                        type="button"
+                        class="boton-siguiente">
+                        <span>Siguiente</span>
+                    </button>
     
                 </form>
-    
             </div>
     
     
@@ -161,14 +222,27 @@
                     
                     <p>Si necesita agregar información, utilice este espacio:</p>
             
-                    <textarea id="comentario-consulta" name="comentario-consulta" placeholder="Ingrese aqui su comentario o consulta"></textarea>
+                    <textarea 
+                        id="comentario-consulta" 
+                        name="comentario-consulta" 
+                        placeholder="Ingrese aqui su comentario o consulta">
+                    </textarea>
             
-                    <button type="button" id="boton__comentario-atras" class="boton-atras"><span>Atrás</span></button>
+                    <button
+                        id="boton__comentario-atras"
+                        type="button"
+                        class="boton-atras">
+                        <span>Atrás</span>
+                    </button>
 
-                    <button type="button" id="boton__comentario-enviar" class="boton-siguiente"><span>Enviar</span></button>
+                    <button
+                        id="boton__comentario-enviar"
+                        type="button"
+                        class="boton-siguiente">
+                        <span>Enviar</span>
+                    </button>
             
                 </form>
-            
             </div>
 
             <div id="container__form-resumen"  class="form-container">
@@ -179,12 +253,15 @@
             
                     <div id="resumen"></div>
             
-                    <button type="button" id="boton__resumen-descargar" class="boton-siguiente"><span>Descargar comprobante</span></button>
+                    <button
+                        id="boton__resumen-descargar"
+                        type="button" 
+                        class="boton-siguiente">
+                        <span>Descargar comprobante</span>
+                    </button>
             
                 </form>
-            
             </div>
-
         </main>
 
 

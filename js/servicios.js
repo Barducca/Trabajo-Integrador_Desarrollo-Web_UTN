@@ -14,6 +14,19 @@ $(function(){
     $("#comentario-consulta").val("");
 });
 
+$("#form-servicios").validate({
+    rules: {
+        servicios: {
+            required: true
+        }
+    },
+    messages: {
+        servicios: {
+            required: "Debe seleccionar al menosu una opción."
+        }
+    },
+    errorLabelContainer: $('#servicios-error')
+});
 
 //declaramos las reglas de validación de datos
 $("#form-datos").validate({
@@ -64,6 +77,11 @@ var resumenPdf = "";
 $("#boton__servicios-siguiente").click(function() {
 
     var servicios = [];
+
+    //validación del formulario
+    if($("#form-servicios").valid() == false){
+        return;
+    }
 
     //se guardan los valores de los checkbox seleccionados en un array.
     $('input:checkbox:checked').each(function(index, elem) {
