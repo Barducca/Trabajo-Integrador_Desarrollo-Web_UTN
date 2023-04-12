@@ -14,7 +14,7 @@
     </head>
 
     
-    <body>
+    <body id="index">
         
         <header>
             <nav class="menu">
@@ -28,11 +28,11 @@
                     
                     <ul class="menu__links">
                         <li class="menu__item">
-                            <a href="./index.html" class="menu__link">Inicio</a>
+                            <a href="./index.html" class="menu__link"><img src="./assets/home.svg" class="menu__icon">Inicio</a>
                         </li>
             
                         <li class="menu__item menu__item--show">
-                            <a href="javascript:void(0)" class="menu__link">Servicios<img src="./assets/arrow.svg" class="menu__arrow"></a>
+                            <a href="./servicios.html" class="menu__link"><img src="./assets/servicios.svg" class="menu__icon">Servicios<img src="./assets/arrow.svg" class="menu__arrow"></a>
             
                             <ul class="menu__nesting">
                                 <li class="menu__inside">
@@ -48,7 +48,7 @@
                         </li>
             
                         <li class="menu__item  menu__item--show">
-                            <a href="javascript:void(0)" class="menu__link">Proyecto<img src="./assets/arrow.svg" class="menu__arrow"></a>
+                            <a href="javascript:void(0)" class="menu__link"><img src="./assets/projecto.svg" class="menu__icon">Proyecto<img src="./assets/arrow.svg" class="menu__arrow"></a>
             
                             <ul class="menu__nesting">
                                 <li class="menu__inside">
@@ -61,7 +61,7 @@
                         </li>
             
                         <li class="menu__item">
-                            <a href="./contacto.html" class="menu__link">Contacto</a>
+                            <a href="./contacto.html" class="menu__link"><img src="./assets/contacto.svg" class="menu__icon">Contacto</a>
                         </li>
                     </ul>
         
@@ -100,9 +100,9 @@
 
                 <article id="firewall">
 
-                    <img class="article-img" src="./img/firewall.png" alt="">
+                    <img class="article-img animate__animated" src="./img/firewall.png" alt="">
                     
-                    <div class="descripcion">
+                    <div class="descripcion animate__animated">
                         <h3>ADMINISTRACIÓN DE FIREWALL</h3>
                         <p>
                         Con el objetivo de controlar la creciente superficie de ataque digital, 
@@ -124,9 +124,9 @@
 
                 <article id="vpn">
 
-                    <img class="article-img" src="./img/vpn.png" alt="">
+                    <img class="article-img animate__animated" src="./img/vpn.png" alt="">
 
-                    <div class="descripcion">
+                    <div class="descripcion animate__animated">
 
                         <h3>VPN</h3>
 
@@ -150,9 +150,9 @@
 
                 <article id="dp-protect">
 
-                    <img class="article-img" src="./img/ciberseguridad.png" alt="">
+                    <img class="article-img animate__animated" src="./img/ciberseguridad.png" alt="">
 
-                    <div class="descripcion">
+                    <div class="descripcion animate__animated">
 
                         <h3>Digital Planet Protect</h3>
 
@@ -198,6 +198,7 @@
         <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
         <script src="./js/header-menu.js"></script>
         <script src="./js/client-api.js"></script>
+        <script src="./js/animate.js"></script>
 
     </body>
 </html>

@@ -22,7 +22,7 @@ $("#form-servicios").validate({
     },
     messages: {
         servicios: {
-            required: "Debe seleccionar al menosu una opción."
+            required: "Debe seleccionar al menos una opción."
         }
     },
     errorLabelContainer: $('#servicios-error')

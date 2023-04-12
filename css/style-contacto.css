@@ -6,6 +6,10 @@
     padding: 0;
 }
 
+html{
+    max-height: fit-content;
+}
+
 body{
     font-family: 'Poppins', sans-serif;
     background-image: url(../img/background.png);

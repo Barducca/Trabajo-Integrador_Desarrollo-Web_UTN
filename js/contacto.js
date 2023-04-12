@@ -48,11 +48,13 @@ $("#botonEnviar").click(function() {
     // recopilamos datos del primer fomulario
     var nombre = $("#nombre").val();
     var email = $("#email").val();
+    var telefono = $("#telefono").val();
     var mensaje = $("#mensaje").val();
 
     //mostramos un resumen de los datos ingresados en el <div> del segundo formulario
     $("#resumen").html(`<strong>Nombre: </strong>${nombre}<br><br>
                         <strong>Email: </strong>${email}<br><br>
+                        <strong>Telefono: </strong>${telefono}<br><br>
                         <strong>Mensaje: </strong>${mensaje}`);
         
     // ocultar el primer formulario y muestra el segundo con el resumen
@@ -70,7 +72,8 @@ $("#botonAtras").click(function() {
     $("#container__form-1").fadeIn("fast");
     
     //vaciamos las variables para que el formulario este limpio  
-    nombre.value = "";
-    email.value = "";
-    mensaje.value = "";
+    $("#nombre").val() = "";
+    $("#email").val() = "";
+    $("#telefono").val() = "";
+    $("#mensaje").val() = "";
 });

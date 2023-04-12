@@ -26,14 +26,14 @@
                     </a>
 
                     <div id="show"></div>
-        
+                    
                     <ul class="menu__links">
                         <li class="menu__item">
-                            <a href="./index.html" class="menu__link">Inicio</a>
+                            <a href="./index.html" class="menu__link"><img src="./assets/home.svg" class="menu__icon">Inicio</a>
                         </li>
             
                         <li class="menu__item menu__item--show">
-                            <a href="javascript:void(0)" class="menu__link">Servicios<img src="./assets/arrow.svg" class="menu__arrow"></a>
+                            <a href="javascript:void(0)" class="menu__link"><img src="./assets/servicios.svg" class="menu__icon">Servicios<img src="./assets/arrow.svg" class="menu__arrow"></a>
             
                             <ul class="menu__nesting">
                                 <li class="menu__inside">
@@ -49,7 +49,7 @@
                         </li>
             
                         <li class="menu__item  menu__item--show">
-                            <a href="javascript:void(0)" class="menu__link">Proyecto<img src="./assets/arrow.svg" class="menu__arrow"></a>
+                            <a href="javascript:void(0)" class="menu__link"><img src="./assets/projecto.svg" class="menu__icon">Proyecto<img src="./assets/arrow.svg" class="menu__arrow"></a>
             
                             <ul class="menu__nesting">
                                 <li class="menu__inside">
@@ -62,7 +62,7 @@
                         </li>
             
                         <li class="menu__item">
-                            <a href="./contacto.html" class="menu__link">Contacto</a>
+                            <a href="./contacto.html" class="menu__link"><img src="./assets/contacto.svg" class="menu__icon">Contacto</a>
                         </li>
                     </ul>
         
@@ -84,7 +84,7 @@
     
                     <p>Quiero saber más sobre (puede seleccionar varios):</p>
                     
-                    <label for="servicio__firewall">
+                    <label id="label__firewall" for="servicio__firewall">
                         <img 
                             id="img__firewall"
                             src="./img/prod-firewall.jpg"
@@ -100,7 +100,7 @@
                         Administración de firewall
                     </label>
     
-                    <label for="servicio__vpn">
+                    <label id="label__vpn" for="servicio__vpn">
                         <img 
                             id="img__vpn"
                             src="./img/prod-vpn.png"
@@ -116,7 +116,7 @@
                         VPN
                     </label>
 
-                    <label for="servicio__dp-protect">
+                    <label id="label___dp-protect" for="servicio__dp-protect">
                         <img 
                             id="img__dp-protect"
                             src="./img/prod-ciberseguridad.jpg"
@@ -145,7 +145,7 @@
             </div>
     
     
-            <div id="container__form-datos"  class="form-container">
+            <div id="container__form-datos" class="form-container">
     
                 <H2>Por favor brindenos la información que a continuación se solicita:</H2>
     
@@ -216,7 +216,7 @@
             </div>
     
     
-            <div id="container__form-comentario"  class="form-container">
+            <div id="container__form-comentario" class="form-container">
     
                 <form id="form-comentario">
                     
@@ -225,8 +225,8 @@
                     <textarea 
                         id="comentario-consulta" 
                         name="comentario-consulta" 
-                        placeholder="Ingrese aqui su comentario o consulta">
-                    </textarea>
+                        placeholder="Ingrese aqui su comentario o consulta"
+                    ></textarea>
             
                     <button
                         id="boton__comentario-atras"
@@ -245,7 +245,7 @@
                 </form>
             </div>
 
-            <div id="container__form-resumen"  class="form-container">
+            <div id="container__form-resumen" class="form-container">
     
                 <form id="form-resumen">
                     

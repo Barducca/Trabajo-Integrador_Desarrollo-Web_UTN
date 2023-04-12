@@ -8,8 +8,9 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/vnd.microsoft.icon" href="./img/dp-icon.png">
-        <link rel="stylesheet" href="css/style-header-footer.css">
-        <link rel="stylesheet" href="css/style-contacto.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <link rel="stylesheet" href="./css/style-header-footer.css">
+        <link rel="stylesheet" href="./css/style-contacto.css">
     </head>
 
 
@@ -22,16 +23,16 @@
                         <img class="icon" src="./img/dp-icon.png" alt="">
                         DIGITAL PLANET
                     </a>
-                    
+
                     <div id="show"></div>
-        
+                    
                     <ul class="menu__links">
                         <li class="menu__item">
-                            <a href="./index.html" class="menu__link">Inicio</a>
+                            <a href="./index.html" class="menu__link"><img src="./assets/home.svg" class="menu__icon">Inicio</a>
                         </li>
             
                         <li class="menu__item menu__item--show">
-                            <a href="#" class="menu__link">Servicios<img src="./assets/arrow.svg" class="menu__arrow"></a>
+                            <a href="javascript:void(0)" class="menu__link"><img src="./assets/servicios.svg" class="menu__icon">Servicios<img src="./assets/arrow.svg" class="menu__arrow"></a>
             
                             <ul class="menu__nesting">
                                 <li class="menu__inside">
@@ -47,7 +48,7 @@
                         </li>
             
                         <li class="menu__item  menu__item--show">
-                            <a href="#" class="menu__link">Proyecto<img src="./assets/arrow.svg" class="menu__arrow"></a>
+                            <a href="javascript:void(0)" class="menu__link"><img src="./assets/projecto.svg" class="menu__icon">Proyecto<img src="./assets/arrow.svg" class="menu__arrow"></a>
             
                             <ul class="menu__nesting">
                                 <li class="menu__inside">
@@ -60,7 +61,7 @@
                         </li>
             
                         <li class="menu__item">
-                            <a href="./contacto.html" class="menu__link">Contacto</a>
+                            <a href="./contacto.html" class="menu__link"><img src="./assets/contacto.svg" class="menu__icon">Contacto</a>
                         </li>
                     </ul>
         
@@ -76,7 +77,7 @@
 
             <h1>Contáctenos</h1>
 
-            <div id="container__form-1" class="form-container">
+            <div id="container__form-1" class="form-container animate__animated animate__zoomIn">
 
                 <form id="form-1">
 
@@ -105,8 +106,8 @@
                         id="mensaje"
                         name="mensaje"
                         class="inputs"
-                        placeholder="Mensaje (debe tener 200 caracteres o menos):">
-                    </textarea>
+                        placeholder="Mensaje (debe tener 200 caracteres o menos):"
+                    ></textarea>
 
                     <button
                         id="botonEnviar"
