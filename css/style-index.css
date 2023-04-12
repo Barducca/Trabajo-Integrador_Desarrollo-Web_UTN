@@ -32,7 +32,7 @@ section{
 }
 
 #hero-background{
-    background-image: url(/img/hero.jpg);
+    background-image: url(../img/hero.jpg);
     position: absolute;
     top: 0;
     left: 0;
