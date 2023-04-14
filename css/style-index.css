@@ -49,6 +49,11 @@ section{
     animation-duration: 1s;
 }
 
+.hero h1{
+    animation: backInDown;
+    animation-duration: 1s;
+}
+
 article{
     display: flex;
     justify-content: center;
@@ -84,8 +89,6 @@ article{
 h1{
     font-size: 35px;
     margin-bottom: 10px;
-    animation: backInDown;
-    animation-duration: 1s;
 }
 
 h2{
