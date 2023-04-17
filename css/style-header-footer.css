@@ -122,6 +122,14 @@ a{
     filter: drop-shadow(5px 5px 5px #000000bd);
 }
 
+#icon-home{
+    margin-bottom: 6px;
+}
+
+#icon-servicios{
+    margin-bottom: 5px;
+}
+
 /*-FOOTER--------------------------------------------------------------------------------------------------*/
 
 footer{

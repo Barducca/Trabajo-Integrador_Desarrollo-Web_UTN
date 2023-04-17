@@ -9,8 +9,6 @@ window.addEventListener("scroll", function(){
 
 function animarEmpresa() {
 
-    console.log("jkl");
-
     var animar = document.querySelectorAll(".animate__animated");
   
     for (var i = 0; i < animar.length; i++){
